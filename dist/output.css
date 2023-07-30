@@ -546,8 +546,24 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
 .z-10 {
   z-index: 10;
+}
+
+.float-right {
+  float: right;
 }
 
 .mx-auto {
@@ -572,11 +588,35 @@ video {
   margin-top: 0px;
 }
 
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .line-clamp-4 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -645,6 +685,10 @@ video {
 
 .h-1 {
   height: 0.25rem;
+}
+
+.h-14 {
+  height: 3.5rem;
 }
 
 .w-5 {
@@ -724,12 +768,24 @@ video {
   width: fit-content;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-14 {
+  width: 3.5rem;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
 
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -762,6 +818,10 @@ video {
 
 .gap-10 {
   gap: 2.5rem;
+}
+
+.gap-20 {
+  gap: 5rem;
 }
 
 .space-x-5 > :not([hidden]) ~ :not([hidden]) {
@@ -802,6 +862,10 @@ video {
 
 .border-2 {
   border-width: 2px;
+}
+
+.border-8 {
+  border-width: 8px;
 }
 
 .border-b {
@@ -861,6 +925,11 @@ video {
 .bg-green-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
+
+.bg-green-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 101 52 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(https\:\/\/limousus\.com\/cdn\/shop\/products\/1_1a73d45e-3311-4dba-bde1-7a5b847c716a\.jpg\?v\=1627007435\)\] {
@@ -997,6 +1066,10 @@ video {
   padding-left: 3rem;
 }
 
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1060,6 +1133,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-bold {
