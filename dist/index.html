@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div class="px-10 py-2 flex justify-between items-center">
+        <div class="px-10 py-2 flex justify-between items-center z-10 w-full bg-white">
             <div class="">
                 <img class="h-16" src="https://www.cartify.pk/cdn/shop/files/ccccccccccccccc_180x.jpg?v=1624130113" alt="cartify">
             </div>
@@ -21,8 +21,25 @@
                     <a href="#">All Products</a>
                 </li>
                 <li>
-                    <a href="#">Shop By Categories <span class="text-xs"><i class="fa fa-angle-down"></i></span></a>
-                </li>
+                    
+                    <li class="relative">
+                        <a class="w-fit peer hover:bg-green-700" href="#">Shop By Categories <span class="text-xs"><i class="fa fa-angle-down"></i></span></a>
+                        
+                        <!-- the menu here -->
+                        <div class="absolute hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg z-10">
+                            <a class="px-5 py-3 hover:bg-gray-200" href="#">Spoon Sets</a>
+                            <a class="px-5 py-3 hover:bg-gray-200" href="#">Kitchen and Dining</a>
+                            <a class="px-5 py-3 hover:bg-gray-200" href="#">Covers</a>
+                            <a class="px-5 py-3 hover:bg-gray-200" href="#">Under 100 Dollars</a>
+                            <a class="px-5 py-3 hover:bg-gray-200" href="#">Choppers</a>
+                            <a class="px-5 py-3 hover:bg-gray-200" href="#">Stove items</a>
+                            <a class="px-5 py-3 hover:bg-gray-200" href="#">Trolleys Set</a>
+                            <a class="px-5 py-3 hover:bg-gray-200" href="#">Wall Stickers</a>
+                            <a class="px-5 py-3 hover:bg-gray-200" href="#">Summer Collection</a>
+                            <a class="px-5 py-3 hover:bg-gray-200" href="#">Hot Items</a>
+                        </div>
+                    </li>
+                    
                 <li>
                     <a href="#">Contact Us</a>
                 </li>
@@ -42,7 +59,7 @@
             </div>
         </div>
     </header>
-    <!-- her0 section -->
+    <!-- hero section -->
     <section>
         <div class="bg-[url('https://limousus.com/cdn/shop/products/1_1a73d45e-3311-4dba-bde1-7a5b847c716a.jpg?v=1627007435')] h-80 bg-cover  text-white bg-center">
             <span class="h-full w-full text-center backdrop-brightness-50  flex justify-center items-center flex-col gap-3">
@@ -58,79 +75,83 @@
     <section>
         <div class="pt-5">
             <h1 class="text-center tracking-widest font-semibold text-xl">BEST SELLING PRODUCTS</h1>
-            <div class="border-2 border-red-800 grid lg:grid-cols-5 md:grid-cols-3 md:gap-4 gap-10 md:px-16 px-28 pt-8">
-                <div class="lg:w-48  md:w-64 shadow-2xl font-semibold">
+            <div class="grid lg:grid-cols-5 md:grid-cols-3 md:gap-4 gap-10 md:px-16 px-28 pt-8">
+                <div class="lg:w-48-md:w-64 shadow-2xl font-semibold">
                     <img class="w-full object-cover" src="https://www.cartify.pk/cdn/shop/files/acd2746b-6918-4718-a3ba-233276ab38ef_360x.jpg?v=1690348277" alt="">
                     <div class="pl-1">
                         <p>Double Tank Grain Storage Dispenser</p>
                         <p>$70</p>
                     </div>
                 </div>
-                <div class="w-48 shadow-2xl md:w-64 lg:w-48 font-semibold">
+                <div class="w-48 shadow-lg md:w-64 lg:w-48 font-semibold">
                     <img class="w-full object-cover" src="https://www.cartify.pk/cdn/shop/files/947777625-1708605256_180x.jpg?v=1690438541" alt="">
                     <div class="pl-1">
-                        <p></p>
-                        <p>$70</p>
+                        <p>10 Kg Rice Storage Airtight Measuring Box with Compartments</p>
+                        <p>$72</p>
                     </div>
                 </div>
-                <div class="w-48 shadow-2xl md:w-64 lg:w-48 font-semibold">
+                <div class="w-48 shadow-lg md:w-64 lg:w-48 font-semibold">
                     <img class="w-full object-cover" src="https://www.cartify.pk/cdn/shop/files/WhatsAppImage2023-07-21at12.43.40PM_180x.jpg?v=1690264069" alt="">
                     <div class="pl-1">
-                        <p></p>
-                        <p>$70</p>
+                        <p>Multi grid Kitchen Seasoning Set WIth Spoons</p>
+                        <p>$14</p>
                     </div>
                 </div>
-                <div class="w-48 shadow-2xl md:w-64 lg:w-48 font-semibold">
+                <div class="w-48 shadow-lg md:w-64 lg:w-48 font-semibold">
                     <img class="w-full object-cover" src="https://www.cartify.pk/cdn/shop/products/1556826375196225504_180x.jpg?v=1690268075" alt="">
                     <div class="pl-1">
                         <p></p>
                         <p>$70</p>
                     </div>
                 </div>
-                <div class="w-48 shadow-2xl md:w-64 lg:w-48 font-semibold">
+                <div class="w-48 shadow-lg md:w-64 lg:w-48 font-semibold">
                     <img class="w-full object-cover" src="https://www.cartify.pk/cdn/shop/products/4_36d754ed-c694-4b24-9312-68614c9bd2ab_180x.jpg?v=1631221083" alt="">
                     <div class="pl-1">
-                        <p></p>
+                        <p>
+                            Mini Rechargable Smoothie Blender/Juice With Straw
+                        </p>
+                        <p>$21</p>
+                    </div>
+                </div>
+                <div class="w-48 shadow-lg md:w-64 lg:w-48 font-semibold">
+                    <img class="w-full object-cover" src="https://www.cartify.pk/cdn/shop/products/9888593502070439631_180x.jpg?v=1690287765" alt="">
+                    <div class="pl-1">
+                        <p>
+                            Wall Mounted Bathroom Rack
+                        </p>
                         <p>$70</p>
                     </div>
                 </div>
-                <div class="w-48 shadow-2xl md:w-64 lg:w-48 font-semibold">
-                    <img class="w-full object-cover" src="" alt="">
+                <div class="w-48 shadow-lg md:w-64 lg:w-48 font-semibold">
+                    <img class="w-full object-cover" src="https://www.cartify.pk/cdn/shop/products/5_309085ef-7b14-4fe6-acbe-9ab9292836e5_180x.jpg?v=1625731945" alt="">
                     <div class="pl-1">
                         <p></p>
                         <p>$70</p>
                     </div>
                 </div>
-                <div class="w-48 shadow-2xl md:w-64 lg:w-48 font-semibold">
-                    <img class="w-full object-cover" src="" alt="">
+                <div class="w-48 shadow-lg md:w-64 lg:w-48 font-semibold">
+                    <img class="w-full object-cover" src="https://www.cartify.pk/cdn/shop/files/WhatsAppImage2023-07-21at12.22.42PM_1_180x.jpg?v=1689944979" alt="">
                     <div class="pl-1">
                         <p></p>
                         <p>$70</p>
                     </div>
                 </div>
-                <div class="w-48 shadow-2xl md:w-64 lg:w-48 font-semibold">
-                    <img class="w-full object-cover" src="" alt="">
+                <div class="w-48 shadow-lg md:w-64 lg:w-48 font-semibold">
+                    <img class="w-full object-cover" src="https://www.cartify.pk/cdn/shop/files/b5dc4ddc-32d4-48df-94e1-b56800768e46_180x.jpg?v=1690350542" alt="">
                     <div class="pl-1">
                         <p></p>
                         <p>$70</p>
                     </div>
                 </div>
-                <div class="w-48 shadow-2xl md:w-64 lg:w-48 font-semibold">
-                    <img class="w-full object-cover" src="" alt="">
+                <div class="w-48 shadow-lg md:w-64 lg:w-48 font-semibold">
+                    <img class="w-full object-cover" src="https://www.cartify.pk/cdn/shop/files/WhatsAppImage2023-07-21at6.58.05PM_180x.jpg?v=1689947932" alt="">
                     <div class="pl-1">
                         <p></p>
                         <p>$70</p>
                     </div>
                 </div>
-                <div class="w-48 shadow-2xl md:w-64 lg:w-48 font-semibold">
-                    <img class="w-full object-cover" src="" alt="">
-                    <div class="pl-1">
-                        <p></p>
-                        <p>$70</p>
-                    </div>
-                </div>
-                <div class="w-48 shadow-2xl md:w-64 lg:w-48 font-semibold">
-                    <img class="w-full object-cover" src="" alt="">
+                <div class="w-48 shadow-lg md:w-64 lg:w-48 font-semibold">
+                    <img class="w-full object-cover" src="https://www.cartify.pk/cdn/shop/products/13852152071724727975_180x.jpg?v=1690349961" alt="">
                     <div class="pl-1">
                         <p></p>
                         <p>$70</p>
@@ -140,5 +161,8 @@
             </div>
         </div>
     </section>
+    
+    
+        
 </body>
 </html>
