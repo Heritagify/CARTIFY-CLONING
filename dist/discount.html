@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+<body class="bg-blue-950">
+   <div class=" container mx-auto my-14 md:my-32 px-5 flex justify-center">
+        <div class="bg-slate-200 px-3 text-slate-700">
+            <h1 class="text-center font-bold text-2xl my-3">Discount Calculator</h1>
+            <div class="flex justify-between gap-10">
+                <label for="">Enter bill amount:</label>
+                <input id="amount" class="bg-transparent border-b border-gray-900 outline-none px-1 text-slate-900" type="number">
+            </div>
+            <div class="flex justify-between py-3">
+                <label for="discount-percentage">Select discount %:</label>
+                <select id="percentage" class="border border-slate-300 w-44 font-xs px-2 outline-none" name="percentage" id="">
+                    <option value="0">0</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                </select>
+            </div>
+            <div class="flex justify-between">
+                <label for="amount">Discount amount:</label>
+                <input id="dis-amount" class="bg-transparent border-b border-gray-900 outline-none px-1 text-slate-900" type="number">
+            </div>
+            <div class="flex justify-between py-3">
+                <label for="amount">Final pay:</label>
+                <input id="pay" class="bg-transparent border-b border-gray-900 outline-none px-1 text-slate-900" type="number">
+            </div>
+            <div class="my-3">
+                <button type="submit" id="Calculate" onclick="calculate()" class="bg-slate-900 py-[0.3rem] w-64 ml-10 text-slate-300 text-sm font-semibold hover:scale-110 rounded-md">Calculate</button>
+            </div>
+            <div class="mb-5">
+                <button type="reset" value="reset" class="bg-red-900 w-64 py-[0.3rem] ml-10 text-slate-300 text-sm font-semibold hover:scale-110 rounded-md">Reset</button>
+            </div>
+        </div>
+   </div>
+</body>
+</html>
+
+<script>
+    
+    calculate = (e)=>{
+        e.preventDefault()
+        let amount =document.getElementById("amount").value;
+        let percentage =document.getElementById("percentage").value;
+        let discountAmount = document.getElementById("dis-amount");
+        let pay = document.getElementById("pay");
+
+        discountAmount.value = 
+}
+
+
+</script>
