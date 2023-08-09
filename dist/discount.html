@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/dist/output.css">
 </head>
-<body class="bg-blue-950">
+<body>
    <div class=" container mx-auto my-14 md:my-32 px-5 flex justify-center">
         <div class="bg-slate-400 px-3 text-slate-700 rounded-lg ">
             <h1 class="text-center font-bold text-2xl my-3">Discount Calculator</h1>
@@ -33,10 +33,10 @@
                 <input id="pay" class="bg-transparent border-b border-gray-900 outline-none px-1 text-slate-900" type="number" required>
             </div>
             <div class="my-3">
-                <button type="submit" id="CalculateBtn" onclick="calculate()" class="hover:opacity-80 bg-slate-900 py-[0.3rem] w-64 ml-10 text-slate-300 text-sm font-semibold hover:scale-110 rounded-md">Calculate</button>
+                <button type="submit" id="CalculateBtn" onclick="calculate()" class="hover:opacity-80 py-[0.3rem] w-64 ml-10 text-sm font-semibold hover:scale-110 rounded-md">Calculate</button>
             </div>
             <div class="mb-5">
-                <button type="reset" onclick="resetBtn()" value="reset" class="bg-red-900 w-64 py-[0.3rem] ml-10 text-slate-300 text-sm font-semibold hover:scale-110 rounded-md">Reset</button>
+                <button type="reset" onclick="resetBtn()" value="reset" class="w-64 py-[0.3rem] ml-10 text-sm font-semibold hover:scale-110 rounded-md">Reset</button>
             </div>
         </div>
    </div>
@@ -53,7 +53,7 @@
 
         discountAmount.value = amount * percentage / 100;
         pay.value = amount - discountAmount.value;
-}
+    }
 
 
 resetBtn=()=>{
